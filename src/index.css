@@ -1,0 +1,470 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* background-image: url(/images/backimg5.jpg);  */
+  background-color: white;
+     /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center; 
+    background-size: cover;
+    
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+
+  /* Direction of the items, can be row or column */
+  flex-direction: column;
+}
+header{
+  background-color: black;
+  color: white; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+} 
+
+footer{
+  background-color: black;
+  color: white; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+
+} 
+main {
+  flex: 1;
+}
+
+.sidebarbtn{
+  font-size: 27px;
+  border: none;
+  color: white; 
+  background-color: black;
+  height:100%;
+  cursor: pointer;
+
+}
+.sidebarcon{
+  position: fixed;
+  transform: translateX(-15rem);
+  width: 15rem;
+  background-color: whitesmoke;
+  transition: all 0.3s;
+  height:100%;
+}
+.homebutton{
+  font-size: 25px;
+}
+.openSidebar{
+  transform: translateX(0);
+}
+.sidebarcon a{
+  color: darkblue;
+  font-size: large;
+  padding-bottom: 1rem; 
+  padding-left: 2rem;
+}
+
+.sidebarcon-menu a:hover{
+  background-color: lightgrey; 
+  display: block;
+  color: red;  
+  cursor: pointer; 
+}
+.header3{
+  margin-left: 0.5rem;
+}
+.sidebarcon-menu{
+  list-style-type: none; 
+  display: block; 
+  padding: 0rem;
+
+}
+.sidebarcon-menu li{
+padding-bottom: 0.8rem;
+}
+.button-close{
+  background-color: lightgrey; /* Green */
+  border: none;
+  color: darkblue;
+  padding: .5rem; 
+  text-decoration: none; 
+  font-size: 16px;
+  display: block;
+  float: right;
+  margin-left: -50%;
+  cursor: pointer;
+}
+a{
+
+  color:white;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+a:hover{
+  color:red;
+}
+
+.products {
+  display: flex; 
+  flex-wrap: wrap;
+} 
+
+.product-card {
+  
+  padding: 2%;
+  flex-grow: 1; /*flex items take equal space in the row. */
+  flex-basis: 16%; /*sets the initial main size of a flex item*/
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+  flex-direction: column;
+}
+.md-form{ 
+  display: flex; 
+  flex-direction: column;
+  padding: 3rem;
+} 
+.product-image img {
+  border-top: 0.1rem solid grey;  
+  padding: 1rem;  
+  width:  300px;
+  height: 300px;  
+  transition: transform 0.5s;
+  
+}
+.product-image img:hover{
+  transform: scale(1.1);
+}
+
+.product-image a h5{
+  margin: 1rem;
+  font-size: larger;
+  text-align: center;
+  color:blue
+}
+.product-image a h5:hover{ 
+  color:red
+}
+.product-info {
+  padding: 1rem; 
+  margin-top: auto; 
+}
+.product-info h6{
+  margin: -1rem;
+  font-size: larger;
+  text-align: center;
+}
+.product-detail{
+  margin: 5rem;
+  font-size: large;
+}
+.product-action button{
+  margin: 5rem;
+  border: 0.2rem solid;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.product-action button:hover{
+  color: red;
+} 
+ .product-details{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ } 
+
+.item-img{
+  mix-blend-mode: multiply;
+
+}
+
+/* .Sign-in-screen, .register-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;    
+  border: 0.1rem lightgray solid;
+  border-radius: 0.2rem;
+  height:29rem;
+  
+}   */
+.forgot-password{
+  display:block; 
+  padding-left:-0.5rem;
+  align-items: center;
+
+}
+.forgot-password a{ 
+  color:blue;   
+}
+.forgot-password a:hover{
+  color:red
+}
+ /* .Sign-in-screen .form-group{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;  
+  margin: 0rem;
+ } */
+/* .register-screen .form-group{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;  
+  margin: 0rem;
+ } */
+
+ .form-control{
+   margin-bottom: 1rem;
+   height:1.5rem;
+   width:100%;
+   border-radius: 0.2rem;
+  } 
+
+  .btn-primary{ 
+    margin-top: 1.5rem;
+    margin-bottom:1.7rem;
+    height:3rem; 
+    width:10rem;
+    cursor: pointer;
+  }
+  .btn-primary:hover{
+    color:red; 
+  }
+  .container-main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .container{
+     display: flex;
+     flex-wrap: wrap;
+   } 
+   .description {
+    font-size: 18px;
+  }
+   @media screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .description {
+      font-size: 21px;
+    }
+  }
+  .collection{ 
+    list-style-type: none; 
+  }
+  /* li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  } */
+  li img{
+    width: 200px;
+    height: 200px;
+  }
+  .collection-item-2{
+      border: 0.1rem solid grey; 
+      border-radius: 0.2rem; 
+      font-size:larger
+
+} 
+.collection-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 0.1rem solid grey; 
+    border-radius: 0.2rem;
+    padding: 2rem;
+}
+ .waves-effect{
+    width: 20rem;
+   cursor:pointer;
+ } 
+ .log-out-button{
+  height:3rem;
+  width: 20rem;
+  cursor:pointer;
+  font-size: large;
+ }
+ .log-out-button:hover{ 
+   color: red;
+ }
+  .checkout{  
+    display:block;
+    width:20rem;
+    padding-left:4rem;
+    margin:2rem; 
+    padding-top: 2rem;
+  
+  }
+  .button-primary{
+    height: 2.5rem;
+    font-size: medium;
+    cursor: pointer;
+    background-color:goldenrod;
+    margin-top: 1rem;   
+    width: 20rem;
+  }
+  .button-primary:hover{
+    color:red;
+  }
+  .cart-name{
+    color: darkblue;
+    padding-bottom: 1rem;
+  }
+  .cart-name a{
+    color: darkblue;
+    font-size: large;
+   }
+  .cart-sub-name{
+    padding-bottom: 1rem;
+  }
+  .cart-name a:hover{
+    color:red;
+  }
+
+  .cart-quantity{
+    width:2.5rem;
+    height:2rem;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container1 {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btnn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  } */
+  
+   .btnn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .main1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 1rem; 
+    margin-left: 17rem; 
+  }
+  .main-1-border img{
+    border: 0.1rem solid grey;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+  .main2{
+    display: block;
+    margin-left:8rem ;
+  }
+  .btn-xl{
+    display: block;
+    margin-left: 4rem;
+    font-size: large;
+  }
+
+  .all-image{
+    width:350px;
+    height:350px;
+  } 
+
+  .main-container{ 
+    display: block;
+    margin: auto; 
+    margin-top: 10rem;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+  }
