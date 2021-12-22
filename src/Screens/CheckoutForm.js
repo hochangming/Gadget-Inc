@@ -1,5 +1,5 @@
 import React, { Component,useState } from "react";
-import PaypalButtons from "./PaypalButtons"; 
+// import PaypalButtons from "./PaypalButtons"; 
 import Spinner from "./Spinner"; 
 
 class CheckoutForm extends Component {
@@ -14,10 +14,6 @@ class CheckoutForm extends Component {
     this.setState({ showPaypal: true });
   };
    render() {
-    const { showPaypal } = this.state;
-    if (showPaypal) {
-      return <PaypalButtons />;
-    } else {
       return (
         <div>
           {(this.state.loaded)?<div> <Spinner /></div> :
@@ -46,6 +42,5 @@ class CheckoutForm extends Component {
       );
     }
   }
-}
 
 export default CheckoutForm;
