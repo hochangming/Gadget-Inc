@@ -16,7 +16,7 @@ import CheckoutForm from './Screens/CheckoutForm';
 const close = () =>{
   document.querySelector(".sidebarcon").classList.remove("openSidebar");
 }
-
+ 
 function App() {
   const [state, setstate] = useState(localStorage.getItem('loginState') ? JSON.parse(localStorage.getItem('loginState')).emailAddress : ''); 
   useEffect(() => {
